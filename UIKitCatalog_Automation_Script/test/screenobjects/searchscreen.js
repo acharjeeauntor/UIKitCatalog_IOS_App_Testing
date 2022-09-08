@@ -1,14 +1,14 @@
 class SearchScreen {
-    defaultInProgressActivitySelector='-ios class chain:**/XCUIElementTypeActivityIndicator[`label == "In progress"`][1]'
-    tintedInProgressActivitySelector='-ios class chain:**/XCUIElementTypeActivityIndicator[`label == "In progress"`][3]'
+    defaultBtnSelector=`~Default`
+    customBtnSelector=`~Custom`
 
-    async isDefaultInProgressVisible(){
-        return await $(this.defaultInProgressActivitySelector).isExisting()
+    async clickDefaultSearchBtn(){
+       await $(this.defaultBtnSelector).click()
     }
 
-    async isTintedInProgressVisible(){
-        return await $(this.tintedInProgressActivitySelector).isExisting()
-    }
+    async clickCustomSearchBtn(){
+        await $(this.customBtnSelector).click()
+     }
 
 
 }

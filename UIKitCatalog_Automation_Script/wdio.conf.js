@@ -3,7 +3,7 @@ exports.config = {
     port: 4723,
 
     specs: [
-        './test/specs/activityindicators.test.js'
+        './test/specs/textview.spec.js'
     ],
 
     maxInstances: 1,

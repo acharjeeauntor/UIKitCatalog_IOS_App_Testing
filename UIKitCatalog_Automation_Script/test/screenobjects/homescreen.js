@@ -2,6 +2,8 @@ class HomeScreen {
     activityIndicatorSelector=`~Activity Indicators`
     searchSelector=`~Search`
     alertViewsSelector = `~Alert Views`
+    datePickerSelector =`~Date Picker`
+    textViewSelector=`~Text View`
 
     
     async clickActivityIndicatortBtn(){
@@ -13,6 +15,13 @@ class HomeScreen {
     async clickAlertViewsBtn(){
         await $(this.alertViewsSelector).click() 
     }
+    async clickDatePickerBtn(){
+        await $(this.datePickerSelector).click() 
+    }
+    async clickTextViewBtn(){
+        await $(this.textViewSelector).click() 
+    }
+
 }
 
 module.exports = new HomeScreen();
