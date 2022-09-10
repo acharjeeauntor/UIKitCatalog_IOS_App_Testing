@@ -2,8 +2,12 @@ class HomeScreen {
     activityIndicatorSelector=`~Activity Indicators`
     searchSelector=`~Search`
     alertViewsSelector = `~Alert Views`
-    datePickerSelector =`~Date Picker`
     textViewSelector=`~Text View`
+    stackViewsSelector = `~Stack Views`
+    steppersSelector=`~Steppers`
+    switchsSelector=`~Switches`
+    toolbarSelector=`~Toolbars`
+    pickerViewSelector=`~Picker View`
 
     
     async clickActivityIndicatortBtn(){
@@ -15,11 +19,23 @@ class HomeScreen {
     async clickAlertViewsBtn(){
         await $(this.alertViewsSelector).click() 
     }
-    async clickDatePickerBtn(){
-        await $(this.datePickerSelector).click() 
-    }
     async clickTextViewBtn(){
         await $(this.textViewSelector).click() 
+    }
+    async clickStackViewsBtn(){
+        await $(this.stackViewsSelector).click() 
+    }
+    async clickSteppersBtn(){
+        await $(this.steppersSelector).click() 
+    }
+    async clickSwitchsBtn(){
+        await $(this.switchsSelector).click() 
+    }
+    async clickToolbarBtn(){
+        await $(this.toolbarSelector).click() 
+    }
+    async clickPickerViewBtn(){
+        await $(this.pickerViewSelector).click() 
     }
 
 }

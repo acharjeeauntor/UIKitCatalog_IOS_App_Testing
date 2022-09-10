@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662806016099' stop='1662806018440'>
+    <name>Verify Picker View</name>
+    <title>Verify Picker View</title>
+    <test-cases>
+        <test-case start='1662806016099' status='passed' stop='1662806018440'>
+            <name>TC _012: Verify user can change card color by Picker View and select blue color</name>
+            <title>TC _012: Verify user can change card color by Picker View and select blue color</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 12-15.5'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

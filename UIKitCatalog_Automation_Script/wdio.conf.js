@@ -1,9 +1,18 @@
+import allure from 'allure-commandline'
 exports.config = {
 
     port: 4723,
 
     specs: [
-        './test/specs/textview.spec.js'
+        './test/specs/activityindicators.spec.js',
+        './test/specs/alertviews.spec.js',
+        './test/specs/pickerview.spec.js',
+        './test/specs/search.spec.js',
+        './test/specs/stackviews.spec.js',
+        './test/specs/steppers.spec.js',   
+        './test/specs/switches.spec.js',
+        './test/specs/textview.spec.js',
+        './test/specs/toolbars.spec.js', 
     ],
 
     maxInstances: 1,
@@ -15,7 +24,7 @@ exports.config = {
         "appium:automationName": "XCUITest"
     }
     ],
-    logLevel: 'info',
+    logLevel: 'error',
     bail: 0,
 
     baseUrl: 'http://localhost',
@@ -24,7 +33,31 @@ exports.config = {
     connectionRetryCount: 3,
     services: ['appium'],
     framework: 'mocha',
-    reporters: ['spec'],
+    reporters: ['spec',['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
+    onComplete: function () {
+        const reportError = new Error('Could not generate Allure report')
+        const generation = allure(['generate', 'allure-results'])
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(
+                () => reject(reportError),
+                10000)
+
+            generation.on('exit', function (exitCode) {
+                clearTimeout(generationTimeout)
+
+                if (exitCode !== 0) {
+                    return reject(reportError)
+                }
+
+                console.log('Allure report successfully generated')
+                resolve()
+            })
+        })
+    },
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
