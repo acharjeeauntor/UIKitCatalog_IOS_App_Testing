@@ -82,9 +82,9 @@ The following software are required:
 
 ## BrowserStack, GithubActions & Jenkins related Info:<br>
 
-1. In this project i have automate a .ipa (ios app file type) file ios app. BrowserStack doesn't support .ipa file. So we are not able to intregrate browserstack in this project. <br>
-2. We are not able to intregrate github actions as there need a virtual device to run the test app.As we are not able to upload .ipa file so we are not able to intregrate github actions in this project. <br>
-3. We are not able to intregrate jenkins as there need a virtual device to run the test app.As we are not able to upload .ipa file so we are not able to intregrate jenkins in this project. <br>
+1. In this project i have automate a .ipa (ios app file type) file ios app. BrowserStack doesn't support .app file. So we are not able to intregrate browserstack in this project. <br>
+2. We are not able to intregrate github actions as there need a virtual device to run the test app.As we are not able to upload .app file so we are not able to intregrate github actions in this project. <br>
+3. We are not able to intregrate jenkins as there need a virtual device to run the test app.As we are not able to upload .app file so we are not able to intregrate jenkins in this project. <br>
 
 #### Note: The configuration of running app in browserstack is similar for android and ios app. I have done intregration of Android app in browserstack in another project. To see this project click [here](https://github.com/acharjeeauntor/Amader_Rail_Android_App_Automation_Script)
 
