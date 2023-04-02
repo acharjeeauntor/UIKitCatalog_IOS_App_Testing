@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clearAllure": "if [ -d allure-results ]; then rm -Rf allure-results; fi && if [ -d allure-report ]; then rm -Rf allure-report; fi",
-    "test": "npm run clearAllure && npx wdio wdio.conf.js",
+    "deviceTest": "npm run clearAllure && npx wdio config/wdio.iosdevice.conf.js",
+    "bsTest": "npm run clearAllure && npx wdio config/wdio.bs.conf.js",
     "allureReport": "allure serve"
   },
   "author": "Auntor Acharja",

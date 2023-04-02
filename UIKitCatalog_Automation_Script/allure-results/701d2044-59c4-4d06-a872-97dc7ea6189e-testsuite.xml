@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662817546868' stop='1662817550764'>
+    <name>Verify Switches</name>
+    <title>Verify Switches</title>
+    <test-cases>
+        <test-case start='1662817546868' status='passed' stop='1662817549683'>
+            <name>TC _026: Verify user can Enable-Disable default switch</name>
+            <title>TC _026: Verify user can Enable-Disable default switch</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 12-15.5'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662817549683' status='passed' stop='1662817550763'>
+            <name>TC _027: Verify user can Enable-Disable tinted switch</name>
+            <title>TC _027: Verify user can Enable-Disable tinted switch</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 12-15.5'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

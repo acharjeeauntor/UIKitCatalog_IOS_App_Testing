@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662817504717' stop='1662817510584'>
+    <name>Verify Search</name>
+    <title>Verify Search</title>
+    <test-cases>
+        <test-case start='1662817504717' status='passed' stop='1662817507996'>
+            <name>TC _013: Verify after clicking on cross button search input will clear for Default type search</name>
+            <title>TC _013: Verify after clicking on cross button search input will clear for Default type search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 12-15.5'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662817508000' status='passed' stop='1662817510583'>
+            <name>TC _014: Verify after clicking on cross button search input will clear for Custom type search</name>
+            <title>TC _014: Verify after clicking on cross button search input will clear for Custom type search</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='device' value='iPhone 12-15.5'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
